@@ -1,0 +1,59 @@
+@mixin basic($width,$height,$margin:0,$padding:0) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+@mixin vCenter{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+}
+@mixin row{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+  }
+
+@mixin list{
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
+
+@mixin upperLink{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+@mixin background($repeat, $size, $color,$position) {
+    background-repeat: $repeat;
+    background-size: $size; 
+    background-color: $color;
+    background-position: $position;
+}
+
