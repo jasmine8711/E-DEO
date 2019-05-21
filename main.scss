@@ -2,6 +2,34 @@
 @import"sass/_mixins";
 @import"sass/_font";
 
+body{
+    background: $color2;
+}
+h2{
+    height: 50px;
+    line-height: 50px;
+    text-shadow: 0 0 10px rgba(27,36,54,0.9);
+    position: relative;
+    top: -55px;
+    left: 40px;
+    font-size: 70px;
+    font-family: 'Archivo Black', sans-serif;
+    
+}
+h2::before{
+    content: "";
+    background: -webkit-linear-gradient(bottom, $color4, $color3);
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    left: -15px;
+    margin: 0 auto;
+  }
+
+
 
 /* navigation */
 @import "sass/_nav.scss";
+/* digitaal */
+@import "sass/_digitaal.scss";
+
