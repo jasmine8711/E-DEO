@@ -134,11 +134,29 @@ h2::before {
   min-height: 100%;
 }
 
-.j-title {
-  width: 100%;
+.homecontainer {
+  width: 86vw;
   height: 100vh;
   position: relative;
-  left: -300px;
+  left: 14vw;
+}
+
+.homecontainer p {
+  position: absolute;
+  left: 2%;
+  bottom: 35%;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.homecontainer a {
+  position: absolute;
+  left: 2%;
+  bottom: 10%;
+}
+
+.homecontainer a img {
+  width: 60px;
 }
 
 /* digitaal */
@@ -166,5 +184,99 @@ h2::before {
   width: 80vw;
   margin: 3em auto;
   padding-top: 3em;
+}
+
+/* logo animation */
+h1 {
+  position: absolute;
+  left: 2%;
+  bottom: 50%;
+  font-size: 5rem;
+  letter-spacing: 20px;
+  overflow: hidden;
+}
+
+h1:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+}
+
+h1 span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(#1b2436), to(#45fecd));
+  background: linear-gradient(to right, #1b2436, #45fecd);
+  -webkit-animation: animate1 2s linear infinite;
+          animation: animate1 2s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animate1 {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+h1 span:nth-child(2) {
+  background: none;
+}
+
+h1 span:nth-child(3) {
+  background: none;
+}
+
+h1 span:nth-child(4) {
+  position: absolute;
+  top: 96%;
+  left: -4px;
+  width: 100%;
+  height: 1px;
+  background: -webkit-gradient(linear, right top, left top, from(#1b2436), to(#45fecd));
+  background: linear-gradient(to left, #1b2436, #45fecd);
+  -webkit-animation: animate4 2s linear infinite;
+          animation: animate4 2s linear infinite;
+}
+
+@-webkit-keyframes animate4 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 /*# sourceMappingURL=main.css.map */

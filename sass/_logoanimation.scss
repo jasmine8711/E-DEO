@@ -1,0 +1,65 @@
+
+h1{
+    position: absolute;
+    left: 2%;
+    bottom: 50%;
+    font-size: 5rem;
+    letter-spacing: 20px;
+    overflow: hidden;
+}
+h1:before{ 
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+}
+
+h1 span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,$bgcolor,$color3);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+h1 span:nth-child(2){
+    background: none;
+}
+
+
+h1 span:nth-child(3){
+    background: none;
+}
+
+h1 span:nth-child(4){
+    position: absolute;
+    top: 96%;
+    left: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left,$bgcolor,$color3);
+    animation: animate4 2s linear infinite;
+}
+@keyframes animate4{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
