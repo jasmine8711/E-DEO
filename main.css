@@ -4,6 +4,7 @@
 
 body {
   background: #263954;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -28,6 +29,89 @@ h2::before {
 }
 
 /* navigation */
+.burger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 20px;
+  height: 2px;
+  margin: 5px;
+}
+
+.j-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./image/navbg.png);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-box-shadow: 5px 0 10px #1b2436;
+          box-shadow: 5px 0 10px #1b2436;
+  width: 14vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+}
+
+.j-links li {
+  list-style: none;
+  display: block;
+  width: 14vw;
+  margin: 1em auto 2em 0;
+}
+
+.j-a {
+  position: absolute;
+  color: #f8f9fa;
+  z-index: 999;
+}
+
+.j-navimg {
+  width: 100px;
+}
+
+.j-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .j-opacity {
   background-color: rgba(27, 36, 54, 0.3);
 }
@@ -64,7 +148,7 @@ h2::before {
   width: 80vw;
   height: 95vh;
   margin: 0 auto;
-  background: url(../image/digitaal.jpg);
+  background: url(./image/digitaal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
