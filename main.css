@@ -7,27 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-h2 {
-  height: 50px;
-  line-height: 50px;
-  text-shadow: 0 0 10px rgba(27, 36, 54, 0.9);
-  position: relative;
-  top: -55px;
-  left: 40px;
-  font-size: 70px;
-  font-family: 'Archivo Black', sans-serif;
-}
-
-h2::before {
-  content: "";
-  background: -webkit-linear-gradient(bottom, #4455a2, #45fecd);
-  width: 5px;
-  height: 50px;
-  position: absolute;
-  left: -15px;
-  margin: 0 auto;
-}
-
 /* navigation */
 .burger {
   position: absolute;
@@ -90,6 +69,10 @@ h2::before {
 .j-active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.j-none {
+  display: none;
 }
 
 @-webkit-keyframes navLinkFade {
@@ -161,29 +144,42 @@ h2::before {
 
 /* digitaal */
 .j-digitaal {
-  width: 80vw;
-  height: 95vh;
+  width: 100vw;
+  height: 80vh;
   margin: 0 auto;
-  background: url(./image/digitaal.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #f8f9fa;
 }
 
-.j-digitaal p {
-  margin: 28em auto;
-  width: 80%;
-  background: rgba(27, 36, 54, 0.7);
+.j-title {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  position: absolute;
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 50px;
+  font-family: 'Archivo Black', sans-serif;
 }
 
-.j-digitaal-text {
-  width: 100%;
-  height: 40%;
+.j-title::before {
+  content: "";
+  background: -webkit-linear-gradient(bottom, #4455a2, #45fecd);
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  margin: 0 auto;
 }
 
-.j-digitaal-text p {
-  width: 80vw;
-  margin: 3em auto;
-  padding-top: 3em;
+.j-text {
+  position: relative;
+  top: 22vh;
+  padding: 2em;
+}
+
+.j-img {
+  width: 500px;
+  height: 500px;
 }
 
 /* logo animation */

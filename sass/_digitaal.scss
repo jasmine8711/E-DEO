@@ -1,22 +1,38 @@
 .j-digitaal{
-    width: 80vw;
-    height: 95vh;
+    width: 100vw;
+    height: 80vh;
     margin: 0 auto;
-    background: url(./image/digitaal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    p{
-        margin: 28em auto;
-        width: 80%;
-        background: rgba(27,36,54,0.7);
+    background: $textcolor;
+   
     }
+.j-title{
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    position: absolute;
+    margin:0 auto;
+    padding: 2em;
+    font-size: 50px;
+    font-family: 'Archivo Black', sans-serif;
+    
 }
-.j-digitaal-text{
-    width: 100%;
-    height: 40%;
-    p{
-        width: 80vw;
-        margin: 3em auto;
-        padding-top: 3em;
+.j-title::before{
+    content: "";
+    background: -webkit-linear-gradient(bottom, $color4, $color3);
+    width: 5px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    margin: 0 auto;
+}
+.j-text{
+    position: relative; 
+    top:22vh;
+    padding: 2em;
+}
+.j-img{
+    width: 500px;
+    height: 500px;
     }
-}
+
+

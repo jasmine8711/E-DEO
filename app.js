@@ -6,9 +6,14 @@ const navSlide = () => {
     burger.addEventListener('click',()=>{
         nav.classList.toggle('j-active');
     });
+   
     //animate links
     navLinks.forEach((link,index)=>{
-        link.style.animation = 'navLinkFade 0.2s ease forwards ${index/7}s';
+        if(link.style.animation){
+            link.style.animation = '';
+        } else {
+            link.style.animation = 'navLinkFade 0.2s ease forwards ${index/7}s'
+        }
     });
 }
 navSlide();

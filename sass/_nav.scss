@@ -44,6 +44,9 @@
 .j-active{
     transform: translateX(0%);
 }
+.j-none{
+    display: none;
+}
 @keyframes navLinkFade{
     from{
         opacity: 0;
