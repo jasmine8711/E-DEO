@@ -80,9 +80,7 @@ h2::before {
 }
 
 .j-a {
-  position: absolute;
   color: #f8f9fa;
-  z-index: 999;
 }
 
 .j-navimg {
