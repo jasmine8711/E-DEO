@@ -12,6 +12,7 @@ body {
   position: absolute;
   top: 10px;
   left: 10px;
+  z-index: 1000;
   cursor: pointer;
 }
 
@@ -124,11 +125,12 @@ body {
   left: 14vw;
 }
 
-.homecontainer p {
+.homecontainer .home-p {
+  color: #f8f9fa;
   position: absolute;
   left: 2%;
   bottom: 35%;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 5px;
 }
 
@@ -306,6 +308,67 @@ h1 span:nth-child(4) {
   100% {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+  }
+}
+
+/* media */
+@media only screen and (max-width: 576px) {
+  body {
+    background: #1b2436;
+  }
+  .burger {
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  nav {
+    width: 100%;
+    height: 100%;
+  }
+  .j-links {
+    width: 100vw;
+    height: 100%;
+    background-image: none;
+    background: linear-gradient(60deg, #1b2436 0%, #4455a2 50%, #1b2436 100%);
+    z-index: 999;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .j-navimg {
+    width: 40%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .j-a {
+    display: block;
+    width: 90vw;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: -40px;
+    border-bottom: 1px solid #f8f9fa;
+    font-size: 2em;
+  }
+  .bgvideo {
+    display: none;
+  }
+  .homecontainer {
+    height: 50vh;
+    background: #1b2436;
+  }
+  .home-h1 {
+    font-size: 4em;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+  }
+  .home-p {
+    position: absolute;
+    top: 12em;
+  }
+  .j-main {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

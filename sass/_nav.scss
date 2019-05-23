@@ -2,6 +2,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
+    z-index: 1000;
    
     cursor: pointer;
     .line{
@@ -85,11 +86,12 @@
         height: 100vh;
         position: relative;
         left: 14vw;
-        p{
+        .home-p{
+            color: $textcolor;
             position: absolute;
             left: 2%;
             bottom: 35%;
-            font-size: 2rem;
+            font-size: 1rem;
             letter-spacing: 5px;
         }
         .j-main-link{
