@@ -1,0 +1,50 @@
+.j-contact{
+    width: 100vw;
+    background: $bgcolor;
+}
+.j-map{
+    margin-top: 2em;
+    width: 100%;
+}
+.j-add{
+    color: $color3;
+    width: 20vw;
+    margin-left: auto;
+    text-align: left;
+    position: relative;
+    top: -50px;
+    right: 180px;
+   /*  background:yellow; */
+    h3{
+        color: $textcolor;
+        font: 1.5em;
+    }
+    .j-add-flex{
+        display: flex;
+        flex-flow: row nowrap;
+        ul{ 
+            border-left: 1px solid $textcolor;
+            margin: 0;
+            padding: 0;
+            padding-left: 1em;
+            li{
+                list-style: none;
+                a{
+                    color: $textcolor;
+                    &:hover{
+                        color: $color2;
+                    }
+                } 
+            }
+        }
+        .j-terms{
+            padding-right: 1em;
+            align-self:flex-end;
+            color:$color4;
+            a{
+                color:$color4;
+            }
+        }
+    }
+    
+}

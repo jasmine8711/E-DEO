@@ -66,13 +66,26 @@
     }
     .j-text{
         position: relative;
-        top: 60px;
+        top: 40px;
         padding-right: 10px;
         padding-left: 10px;
+        margin:20px;
     }
     .j-img{
-        width: 100vw;
+        width: 100%;
         height: 100vw;
         margin-top: 3em;
+        margin-right: 0;
     }
+     /* map */
+     .j-add{
+        color: $color3;
+        width: 36vw;
+        margin-left: auto;
+        text-align: left;
+        position: relative;
+        top: -30px; 
+        font-size: 10px;
+    }
+    
 }
