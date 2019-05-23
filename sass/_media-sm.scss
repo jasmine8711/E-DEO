@@ -2,6 +2,9 @@
     body{
         background: $bgcolor;
     }
+    .j-homearrow{
+        display: none;
+    }
     .burger{
         top: 20px;
         left: 20px;
@@ -54,5 +57,22 @@
     }
     .j-main{
         display: none;
+    }
+    .j-title{
+        font-size: 30px;
+    }
+    .j-title::before{
+    display: none;
+    }
+    .j-text{
+        position: relative;
+        top: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .j-img{
+        width: 100vw;
+        height: 100vw;
+        margin-top: 3em;
     }
 }

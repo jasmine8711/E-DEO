@@ -6,6 +6,13 @@ body{
     background: $color2;
     overflow-x: hidden;
 }
+.j-homearrow{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+}
 
 /* navigation */
 @import "sass/_nav.scss";
@@ -19,3 +26,4 @@ body{
 /* media */
 @import "sass/_media-sm.scss";
 @import "sass/_media-md.scss";
+@import "sass/_media-lg.scss";

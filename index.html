@@ -18,12 +18,7 @@
         href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
         crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
-        <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet"
         href="main.css">
     <title>E-DEO</title>
@@ -36,6 +31,8 @@
     <div class="line bg-light"></div>
     <div class="line bg-light"></div>
 </div>
+<a href="#home"><img src="./image/arrow copy.png" alt="" class="j-homearrow"></a>
+
         <nav>
             <ul class="j-links">
                 <img class="j-navimg" src="./image/deologo.png" alt="">
@@ -47,7 +44,7 @@
                 <li>
                     <a class="j-a"  href="#digitaal">Digitaal dicteren</a></li>
                 <li>
-                    <a class="j-a"  href="#">Spraakherkenning</a></li>
+                    <a class="j-a"  href="#spraak">Spraakherkenning</a></li>
                 <li>
                     <a class="j-a"  href="#">Vertaalservice</a></li>
                 <li>
@@ -56,19 +53,18 @@
                     <a class="j-a"  href="#">Contacteer Ons</a></li>
             </ul>
         </nav>
-
-        <main role="main">
-            <!-- video -->
+<!-- video -->
             <div class="fullscreen-video-wrap">
-                <video autoplay
-                    muted
-                    loop
-                    class="bgvideo fixed-top">
-                    <source src="./image/bgvideo.mp4"
-                        type="video/mp4" />
-                </video>
-            </div>
-            <!-- home -->
+                    <video autoplay
+                        muted
+                        loop
+                        class="bgvideo">
+                        <source src="./image/bgvideo.mp4"
+                            type="video/mp4" />
+                    </video>
+                </div>
+        <main role="main">
+ <!-- home -->
             <div id="home" >
                 <div class="homecontainer">
                         <h1 class="text-light home-h1">
@@ -82,8 +78,8 @@
                             software en services
                         </p>
                         <div class="j-main">
-                            <a class="j-main-item" href="">Digitaal dicteren</a>
-                            <a class="j-main-item" href="">Spraakherkenning</a>
+                            <a class="j-main-item" href="#digitaal">Digitaal dicteren</a>
+                            <a class="j-main-item" href="#spraak">Spraakherkenning</a>
                             <a class="j-main-item"  href="">Vertaalservice
                                 </a>
                             <a class="j-main-item j-main-last"  href="">
@@ -92,17 +88,15 @@
                         </div>
                         <a class="j-main-link" href="#digitaal">
                                 <img class="j-main-img" src="./image/arrow.png" alt="">
-                        </a>
-                        
-                        
+                        </a>  
                 </div>
             </div>
             <!-- dictation -->
 
-    <div class="row featurette j-digitaal" id="digitaal">
-        <div class="col-md-7 ">
-                <h2 class="j-title">DIGITAAL DICTEREN</h2>
-                <p class="lead j-text">Dicteer uw rapporten op kantoor met de Philips Speech Mike Premium Touch of de
+    <div class="row featurette j-digitaal pr-0" id="digitaal">
+        <h2 class="j-title">DIGITAAL DICTEREN</h2>
+        <div class="j-content">
+            <p class="j-text pl-md-0">Dicteer uw rapporten op       kantoor met de Philips Speech Mike         Premium Touch of de
                 allernieuwste Speech Air, twedicteertoestellen     die wereldwijd "destandaard geworden zijn.     Bent u
                 onderweg of in de wagen, dan is dPhilips   Pocket Memo 8000-serie onzabsolute aanrader.
                 De kristalheldere kwaliteivandgeluidsbestanden     zorgt vooeenvlottertranscriptie
@@ -111,29 +105,26 @@
                 wedegelijk definitiefvoorbij....
                 <br>
                 Een volledige beschrijvinvanalltoestellen en     software vinduterug ihet overzicht.
-                <br>
-                Klik hier voor een demofeevrijblijvende     offerte-aanvraag.</p>
+            </p>
+            <img class="j-img" src="./image/digitaal.jpg" alt="" >
         </div>
-        <img class="j-img" src="./image/digitaal.jpg" alt="" >
+                
     </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette bg-light">
-      <div class="col-md-7 order-md-2">
+    <div class="row featurette bg-light" id="spraak">
         <h2 class="j-title">Spraakherkenning</h2>
-        <p class="lead j-text">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class="j-img" src="./image/yuyin.jpg" alt="">
-      </div>
+        <div class="j-content">
+            <img class="j-img" src="./image/yuyin.jpg"     alt="">
+            <p class="j-text pr-md-0">Donec ullamcorper nulla     non metus auctor fringilla. Vestibulum id     ligula porta felis euismod semper. Praesent     commodo cursus magna, vel scelerisque nisl     consectetur. Fusce dapibus, tellus ac cursus     commodo.
+            </p>
+        </div>
     </div>
 
     
 
-<script src="https://code.jquery.comjquery-3.3.1.slim.min.js"integrity="sha384-q8i/+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.comajax/libs/popper.js/1.14.7/umdpopper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
-<script src="https:/stackpath.bootstrapcdn.com/bootstrap/4.3.1js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="app.js"></script>
 </body>
 

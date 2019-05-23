@@ -1,20 +1,20 @@
+
 .j-digitaal{
     width: 100vw;
-    height: 80vh;
+    height: auto;
     margin: 0 auto;
     background: $textcolor;
-   
     }
+    
 .j-title{
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     text-align: left;
-    position: absolute;
     margin:0 auto;
-    padding: 2em;
+    padding: 1.5em;
     font-size: 50px;
     font-family: 'Archivo Black', sans-serif;
-    
+    text-transform: uppercase;
 }
 .j-title::before{
     content: "";
@@ -22,12 +22,10 @@
     width: 5px;
     height: 50px;
     position: absolute;
-    left: 50px;
-    margin: 0 auto;
+    left: 100px;
 }
+
 .j-text{
-    position: relative; 
-    top:22vh;
     padding: 2em;
 }
 .j-img{

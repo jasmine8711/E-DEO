@@ -22,7 +22,7 @@
 @mixin row{
     box-sizing: border-box;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content:center;
     align-content: center;
     align-items: center;
@@ -50,7 +50,8 @@
 }
 
 
-@mixin background($repeat, $size, $color,$position) {
+@mixin background($file,$repeat, $size, $color,$position) {
+    background-image: image($file);
     background-repeat: $repeat;
     background-size: $size; 
     background-color: $color;
