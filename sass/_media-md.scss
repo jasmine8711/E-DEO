@@ -1,4 +1,5 @@
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) and (max-width:991px){
+  
     body{
         background:$textcolor;
     }
@@ -72,12 +73,13 @@
         height: 60px;
     }
     .j-content{
-        width: 80vw;
-        margin-right: 0;
+        width: 90vw;
+        margin: 0 auto;
+       
         display: flex;
         flex-flow: row nowrap;
         position: relative;
-        left: 100px;
+        right: 50px;
     }
     .j-text{
         width: 55vw;
@@ -87,4 +89,34 @@
         width: 40vw;
         height: 40vw;
     }
+/* partner */
+.partner-grid {
+    width: 100%;
+    height: 30vh;
+    grid-template-columns: 70% 15% 15%;
+}
+
+.j-col-2{grid-column: span 2 / auto;}
+.j-row-2{grid-row: span 2 / auto;}
+    /* price */
+.price{
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+    .span-col-2{grid-column: span 3 / auto;}
+    .span-row-2{grid-row: span 1 / auto;}
+}
+
+.card-text{
+    margin: 0;
+    padding: 5em;
+}
+
+.j-none{
+    display: none;
+}
+.j-container{
+    height: 80vh;
+}
+
 }

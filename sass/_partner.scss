@@ -1,0 +1,28 @@
+.partner-grid {
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    grid-template-columns: 60% 20% 20%;
+    grid-template-rows: 50% 50%;
+    .partner-1{
+        background-image: url(../image/partner.jpg);
+        background-size: cover;
+        @include vCenter;
+        text-align: center;
+        h3{
+            text-transform: uppercase;
+        }
+    }
+    .partner-2{
+        background: -webkit-linear-gradient(bottom, $color5, $color2);
+        @include vCenter; 
+    }
+    
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+}
+

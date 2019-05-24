@@ -10,11 +10,20 @@ body {
 }
 
 .j-homearrow {
-  width: 50px;
-  height: 50px;
+  width: 54px;
+  height: 70px;
   position: fixed;
   left: 10px;
   bottom: 10px;
+  z-index: 999;
+}
+
+.j-container {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-linear-gradient(bottom, #92979b, #f8f9fa);
+  padding: 100px;
+  margin: 0;
 }
 
 /* navigation */
@@ -192,16 +201,9 @@ body {
 }
 
 /* digitaal */
-.j-linear {
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  background: -webkit-linear-gradient(bottom, #92979b, #f8f9fa);
-}
-
 .j-title {
-  height: 30px;
-  line-height: 30px;
+  height: 20px;
+  line-height: 20px;
   text-align: left;
   margin: 0 auto;
   padding: 1.5em;
@@ -216,7 +218,7 @@ body {
   width: 5px;
   height: 50px;
   position: absolute;
-  left: 100px;
+  left: 50px;
 }
 
 .j-text {
@@ -322,12 +324,73 @@ h1 span:nth-child(4) {
   }
 }
 
+/* partner */
+.partner-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 60vh;
+  -ms-grid-columns: 60% 20% 20%;
+      grid-template-columns: 60% 20% 20%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.partner-grid .partner-1 {
+  background-image: url(../image/partner.jpg);
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.partner-grid .partner-1 h3 {
+  text-transform: uppercase;
+}
+
+.partner-grid .partner-2 {
+  background: -webkit-linear-gradient(bottom, #3f9088, #263954);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partner-grid img {
+  width: 100%;
+  height: 100%;
+}
+
 /* price */
 .price {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 100px;
   padding-top: 5em;
   padding-bottom: 0;
   display: -ms-grid;
@@ -338,7 +401,6 @@ h1 span:nth-child(4) {
       grid-template-rows: 50% auto;
   color: #f8f9fa;
   text-align: center;
-  background: -webkit-linear-gradient(bottom, #92979b, #f8f9fa);
 }
 
 .span-col-2 {
@@ -585,6 +647,54 @@ h1 span:nth-child(4) {
     margin-top: 3em;
     margin-right: 0;
   }
+  /* partner */
+  .j-container {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .j-content {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .partner-grid {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .partner-sm {
+    width: 100%;
+    height: 300px;
+  }
+  .partner-sm-w {
+    width: 150px;
+    height: 150px;
+    margin: 1em auto;
+    float: left;
+    position: relative;
+    left: 10%;
+  }
+  /* price */
+  .price {
+    display: block;
+    width: 100vw;
+    height: 1600px;
+    margin: 0;
+    padding: 0;
+  }
+  .price-card {
+    width: 100%;
+    height: 400px;
+    border-bottom: 1px #f8f9fa solid;
+  }
+  .card-text {
+    margin: 0;
+    padding: 1em;
+  }
   /* map */
   .j-add {
     color: #45fecd;
@@ -595,9 +705,10 @@ h1 span:nth-child(4) {
     top: -30px;
     font-size: 10px;
   }
+  /* container */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     background: #f8f9fa;
   }
@@ -671,8 +782,8 @@ h1 span:nth-child(4) {
     height: 60px;
   }
   .j-content {
-    width: 80vw;
-    margin-right: 0;
+    width: 90vw;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -681,7 +792,7 @@ h1 span:nth-child(4) {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     position: relative;
-    left: 100px;
+    right: 50px;
   }
   .j-text {
     width: 55vw;
@@ -690,6 +801,41 @@ h1 span:nth-child(4) {
   .j-img {
     width: 40vw;
     height: 40vw;
+  }
+  /* partner */
+  .partner-grid {
+    width: 100%;
+    height: 30vh;
+    -ms-grid-columns: 70% 15% 15%;
+        grid-template-columns: 70% 15% 15%;
+  }
+  .j-col-2 {
+    grid-column: span 2 / auto;
+  }
+  .j-row-2 {
+    grid-row: span 2 / auto;
+  }
+  /* price */
+  .price {
+    padding: 0;
+    height: 80vh;
+    width: 100vw;
+  }
+  .price .span-col-2 {
+    grid-column: span 3 / auto;
+  }
+  .price .span-row-2 {
+    grid-row: span 1 / auto;
+  }
+  .card-text {
+    margin: 0;
+    padding: 5em;
+  }
+  .j-none {
+    display: none;
+  }
+  .j-container {
+    height: 80vh;
   }
 }
 
@@ -775,7 +921,7 @@ h1 span:nth-child(4) {
   .homecontainer .home-h1 {
     width: 50vw;
     position: relative;
-    top: 3em;
+    top: 1.5em;
   }
   .homecontainer .home-h1 img {
     height: 50px;
@@ -799,9 +945,45 @@ h1 span:nth-child(4) {
     width: 700px;
   }
   .j-content {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    position: relative;
+    right: 50px;
+  }
+  .j-img {
+    width: 450px;
+    height: 450px;
+  }
+  /* partner */
+  .j-lg-block {
+    display: block;
+  }
+  /* price */
+  .price {
+    padding: 100px;
+    height: 100vh;
+    width: 100vw;
+  }
+  .span-col-2 {
+    grid-column: span 2 / auto;
+  }
+  .span-row-2 {
+    grid-row: span 2 / auto;
+  }
+  .card-text {
+    margin: 0;
+    padding: 5em;
+  }
+  .card-img {
+    width: 25%;
+    margin-bottom: 3em;
   }
   /* map */
   .j-add {
