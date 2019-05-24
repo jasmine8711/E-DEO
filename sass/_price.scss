@@ -1,0 +1,72 @@
+.price{
+        height: 100vh;
+        width: 100vw;
+        margin:0;
+        padding: 100px;
+        padding-top: 5em;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50% auto;
+        color: $textcolor;
+        text-align: center;
+        background: -webkit-linear-gradient(bottom, $color6, $textcolor);
+
+}
+.span-col-2{grid-column: span 2 / auto;}
+.span-row-2{grid-row: span 2 / auto;}
+.price-card{
+    @include vCenter;
+    position: relative;
+    .price-send{
+        display: block;
+        background: $color5;
+        color: $textcolor;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        .fa-paper-plane{
+            margin-top: 14px;
+        }
+    }
+    h3{
+        color:$color2;
+        border-left: 10px solid $color5;
+        padding-left: 10px;
+    }
+    p{
+        color:$color2;
+        span{
+            font-size: 3em;
+            color: $color5;
+        }
+    }
+}
+.card1{
+    background: -webkit-linear-gradient(bottom, $color5, $color2);
+}
+.card2{
+    background: -webkit-linear-gradient(bottom, $color7, $color5);
+}
+.card-img{
+    width: 30%;
+    margin-bottom: 3em;
+}
+.card-text{
+    padding: 3em;
+}
+.quote{
+    width: 60px;
+    height: 40px;
+}
+.quote1{
+    position: relative;
+    top: -20px;
+}
+.quote2{
+    position: relative;
+    bottom: -20px;
+}
+

@@ -5,6 +5,10 @@
 body{
     background: $color2;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.homearrow:hover .j-homearrow{
+    transform: translateY(-30px);
 }
 .j-homearrow{
     width: 50px;
@@ -20,6 +24,8 @@ body{
 @import "sass/_digitaal.scss";
 /* logo animation */
 @import "sass/_logoanimation.scss";
+/* price */
+@import "sass/_price.scss";
 /* contact */
 @import "sass/_contact.scss";
 

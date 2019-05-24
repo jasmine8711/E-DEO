@@ -1,9 +1,9 @@
 
-.j-digitaal{
+.j-linear{
     width: 100vw;
     height: auto;
     margin: 0 auto;
-    background: $textcolor;
+    background: -webkit-linear-gradient(bottom, $color6, $textcolor);
     }
     
 .j-title{

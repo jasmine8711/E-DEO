@@ -16,8 +16,18 @@
             margin-top: 0;
         }
         } 
-        .homecontainer{
-            height: 40vh;
+    .homecontainer{
+        height: 40vh;
+        .home-h1{
+            width: 30vw;
+            position: relative;
+            top: 1em;
+            img{
+                height: 50px;
+                position: relative;
+                bottom: 8px;
+                }
+            }
         }
     .burger{
         top: 20px;
@@ -46,13 +56,8 @@
         font-size: 1.5em;
         padding-left: 2em;
     }
-   
-    .home-h1{
-        font-size: 4em;
-        margin: 0 auto;
-        position: relative;
-        top: 80px;
-    }
+    
+
     .home-p{
         position: absolute;
         top: 12em;
@@ -66,7 +71,6 @@
         top: 330px;
         height: 60px;
     }
-    
     .j-content{
         width: 80vw;
         margin-right: 0;
