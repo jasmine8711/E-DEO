@@ -3,7 +3,7 @@
  
  The oranginal website is here : [E-DEO](http://www.e-deo.be/).
  Here is brand new [website]( https://jasmine8711.github.io/E-DEO/).
- ## What do i changed?
+ ## What did i change?
  1. Logo. 
  1. Add technical related video as banner background.
  1. Resign the navigaion, add the sidebar.
