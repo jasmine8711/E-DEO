@@ -1,5 +1,5 @@
 # E-DEO
- It is a website that I completely recreating the layout and design of a language company.I refreshed their old design and made it minimalist, focusing on the brand and what they were trying to say to customers. 
+ It is a website that I completely recreating the layout and design of a language company.I refreshed their old design and made it minimalist, focusing on the brand and what they were trying to say to customers. I reinforce the brand's message and make the wetsite user-friendly and cool.
  
  The oranginal website is here : [E-DEO](http://www.e-deo.be/).
  Here is brand new [website]( https://jasmine8711.github.io/E-DEO/).
